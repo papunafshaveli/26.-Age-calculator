@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <div class="times">
+          <div class="time first">
+            <label for="day">DAY</label>
+            <input type="number" name="day" id="day" placeholder="DD" />
+          </div>
+
+          <div class="time second">
+            <label for="month">MONTH</label>
+            <input type="number" name="month" id="month" placeholder="MM" />
+          </div>
+
+          <div class="time third">
+            <label for="year">YEAR</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+          </div>
+        </div>
+
+        <button id="ageGenerator">
+          <img class="arrow" src="./assets/images/icon-arrow.svg" />
+        </button>
+      </header>
+
+      <footer>
+        <div class="generated-time">
+          <p class="years"><span class="years-number">- -</span> years</p>
+          <p class="months"><span class="months-number">- -</span> months</p>
+          <p class="days"><span class="days-number">- -</span> days</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+  </body>
+</html>

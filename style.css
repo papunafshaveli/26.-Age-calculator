@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: hsl(0, 0%, 94%);
+}
+
+.card {
+  width: 375px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 4rem 3rem 4rem 3rem;
+  border-radius: 2rem 2rem 8rem 2rem;
+}
+
+header {
+  border-bottom: 0.2rem solid hsl(0, 0%, 86%);
+  position: relative;
+}
+.times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: hsl(0, 1%, 44%);
+  font-family: inherit;
+  font-weight: 800;
+  line-height: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 9rem;
+  height: 5rem;
+  border: 0.1rem solid hsl(0, 0%, 86%);
+  border-radius: 1.3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.arrow {
+  width: 50%;
+}
+
+#ageGenerator {
+  border: none;
+  border-radius: 3rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ageGenerator:hover {
+  background-color: black;
+}
+
+footer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-family: inherit;
+  font-size: 5.5rem;
+  font-weight: 800;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-family: "Poppins";
+    background-color: hsl(0, 0%, 94%);
+  }
+
+  .card {
+    width: 1440px;
+    padding: 9rem 10rem 9rem 10rem;
+    border-radius: 3rem 3rem 18rem 3rem;
+  }
+
+  .times {
+    display: flex;
+    justify-content: start;
+    gap: 6rem;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  label {
+    color: hsl(0, 1%, 44%);
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+  }
+
+  input {
+    width: 28rem;
+    height: 10rem;
+    border: 0.1rem solid hsl(0, 0%, 86%);
+    border-radius: 1.3rem;
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  .arrow {
+    width: 50%;
+  }
+
+  #ageGenerator {
+    border: none;
+    border-radius: 9rem;
+    width: 16rem;
+    height: 16rem;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    left: 94%;
+    transform: translate(-50%, -50%);
+  }
+
+  #ageGenerator:hover {
+    background-color: black;
+  }
+
+  footer {
+    margin-top: 7rem;
+  }
+  p {
+    font-family: inherit;
+    font-size: 10.5rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+  }
+}
