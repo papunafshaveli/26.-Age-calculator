@@ -1,26 +1,28 @@
 "use strict";
-
+//button
 const checkButton = document.querySelector("#ageGenerator");
-
+//userInput
 const dayInput = document.querySelector("#day");
 const monthInput = document.querySelector("#month");
 const yearInput = document.querySelector("#year");
 
+// the place where result will appear after pressing button
 const resultYear = document.querySelector(".years-number");
 const resultMonth = document.querySelector(".months-number");
 const resultDay = document.querySelector(".days-number");
-
+// get all tags we need them to use for error messages
 const allInputs = document.getElementsByTagName("input");
 const allEms = document.getElementsByTagName("em");
 const allLabels = document.getElementsByTagName("label");
-
+// get em tags
 const firstEm = document.querySelector(".one");
 const secondEm = document.querySelector(".two");
 const thirdEm = document.querySelector(".three");
-
+//after pressing the button this will happen
 checkButton.addEventListener("mousedown", ageCalculate);
-
+//this function calculates years, months and days from current date till today
 function ageCalculate() {
+  // reset
   for (let i = 0; i < allInputs.length; i++) {
     allLabels[i].style.color = "hsl(0, 1%, 44%)";
     allEms[i].textContent = "";
@@ -47,6 +49,7 @@ function ageCalculate() {
   resultMonth.textContent = monthsDiff;
   resultDay.textContent = daysDiff;
 
+  //this function shows error messages
   errorMessages();
 
   function errorMessages() {
